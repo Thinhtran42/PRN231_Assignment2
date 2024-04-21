@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/PRN231_Group5_Assignment2_API.props" />
+</Project>
