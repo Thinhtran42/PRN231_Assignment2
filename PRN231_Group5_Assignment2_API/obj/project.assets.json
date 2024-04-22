@@ -2685,33 +2685,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/thinhtran/.nuget/packages/": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/PRN231_Group5_Assignment2_API.csproj",
+      "projectUniqueName": "D:\\PRN231_BL3\\PRN231_Assignment2\\PRN231_Group5_Assignment2_API\\PRN231_Group5_Assignment2_API.csproj",
       "projectName": "PRN231_Group5_Assignment2_API",
-      "projectPath": "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/PRN231_Group5_Assignment2_API.csproj",
-      "packagesPath": "/Users/thinhtran/.nuget/packages/",
-      "outputPath": "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/",
+      "projectPath": "D:\\PRN231_BL3\\PRN231_Assignment2\\PRN231_Group5_Assignment2_API\\PRN231_Group5_Assignment2_API.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\PRN231_BL3\\PRN231_Assignment2\\PRN231_Group5_Assignment2_API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/thinhtran/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment1_Repo/PRN231_Group5_Assignment1_Repo.csproj": {
-              "projectPath": "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment1_Repo/PRN231_Group5_Assignment1_Repo.csproj"
+            "D:\\PRN231_BL3\\PRN231_Assignment2\\PRN231_Group5_Assignment1_Repo\\PRN231_Group5_Assignment1_Repo.csproj": {
+              "projectPath": "D:\\PRN231_BL3\\PRN231_Assignment2\\PRN231_Group5_Assignment1_Repo\\PRN231_Group5_Assignment1_Repo.csproj"
             }
           }
         }
@@ -2720,6 +2726,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2758,7 +2769,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
