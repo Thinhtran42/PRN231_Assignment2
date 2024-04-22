@@ -14,7 +14,7 @@ const items = [
   { icon: <HomeOutlined />, label: 'Home' },
   { icon: <UserOutlined />, label: 'User' },
   { icon: <ReadOutlined />, label: 'Publishers-Authors' },
-  { icon: <BookOutlined />, label: 'Books', path: '/books' },
+  { icon: <BookOutlined />, label: 'Books', path: 'books' },
 ]
 
 const SiderComponent = () => {

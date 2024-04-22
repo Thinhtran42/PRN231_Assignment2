@@ -137,3 +137,4 @@ D:/PRN231_BL3/Ass2/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/D
 /Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/Debug/net6.0/PRN231_Group5_Assignment2_API.pdb
 /Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/Debug/net6.0/PRN231_Group5_Assignment2_API.genruntimeconfig.cache
 /Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/Debug/net6.0/ref/PRN231_Group5_Assignment2_API.dll
+/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API/obj/Debug/net6.0/PRN231_Group5_Assignment2_API.sourcelink.json

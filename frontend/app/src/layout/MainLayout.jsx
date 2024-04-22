@@ -2,7 +2,6 @@ import { Layout, theme } from 'antd'
 import SiderComponent from '../components/SiderComponent'
 import { Content, Footer, Header } from 'antd/es/layout/layout'
 import { Outlet, Route, Routes } from 'react-router-dom'
-import BooksTableComponent from '../components/BooksTableComponent'
 
 const MainLayout = () => {
   const {
@@ -10,7 +9,7 @@ const MainLayout = () => {
   } = theme.useToken()
   return (
     <div style={{ minHeight: '100vh', minWidth: '100vw' }}>
-      <Layout style={{ minHeight: '100vh', minWidth: '100%' }}>
+      <Layout style={{ minHeight: '100vh', minWidth: '100vw' }}>
         <SiderComponent />
         <Layout>
           <Header
@@ -34,12 +33,6 @@ const MainLayout = () => {
                 borderRadius: borderRadiusLG,
               }}
             >
-              <Routes>
-                <Route
-                  path='/books'
-                  element={<BooksTableComponent />}
-                />
-              </Routes>
               <Outlet />
             </div>
           </Content>
