@@ -1,12 +1,143 @@
 [
   {
-    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublisherController",
-    "Method": "GetPublishers",
-    "RelativePath": "api/publisher",
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.BooksController",
+    "Method": "GetBooks",
+    "RelativePath": "api/books",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageIndex",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRN231_Group5_Assignment1_Repo.Models.Book, PRN231_Group5_Assignment1_Repo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.BooksController",
+    "Method": "CreateBook",
+    "RelativePath": "api/books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createModel",
+        "Type": "PRN231_Group5_Assignment1_Repo.ViewModels.Book.CreateBookViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PRN231_Group5_Assignment1_Repo.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.BooksController",
+    "Method": "GetBook",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PRN231_Group5_Assignment1_Repo.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.BooksController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateViewModel",
+        "Type": "PRN231_Group5_Assignment1_Repo.ViewModels.Book.UpdateBookViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.BooksController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublishersController",
+    "Method": "GetPublishers",
+    "RelativePath": "api/publishers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageIndex",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[PRN231_Group5_Assignment1_Repo.Models.Publisher, PRN231_Group5_Assignment1_Repo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -20,16 +151,22 @@
     ]
   },
   {
-    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "weatherforecast",
-    "HttpMethod": "GET",
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublishersController",
+    "Method": "CreatePublisher",
+    "RelativePath": "api/publishers",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "createModel",
+        "Type": "PRN231_Group5_Assignment1_Repo.ViewModels.Publisher.CreatePublisherViewModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRN231_Group5_Assignment2_API.WeatherForecast, PRN231_Group5_Assignment2_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "PRN231_Group5_Assignment1_Repo.Models.Publisher",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -38,5 +175,68 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublishersController",
+    "Method": "GetPublisher",
+    "RelativePath": "api/publishers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PRN231_Group5_Assignment1_Repo.Models.Publisher",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublishersController",
+    "Method": "UpdatePublisher",
+    "RelativePath": "api/publishers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateViewModel",
+        "Type": "PRN231_Group5_Assignment1_Repo.ViewModels.Publisher.UpdatePublisherViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRN231_Group5_Assignment2_API.Controllers.PublishersController",
+    "Method": "DeletePublisher",
+    "RelativePath": "api/publishers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
