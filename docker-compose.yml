@@ -1,0 +1,32 @@
+﻿version: '3.4'
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  prn231_group5_assignment2_api:
+    image: prn231_group5_assignment2_api
+    build:
+      context: .
+      dockerfile: PRN231_Group5_Assignment2_API/Dockerfile
+    environment:
+      - 'ConnectionStrings__BookStore=User ID=sa;Password=12345;Server=db,1433;Database=BookStore;TrustServerCertificate=True;MultiSubnetFailover=True;Pooling=True;'
+      - ASPNETCORE_URLS=http://+:80
+    depends_on:
+      - app_db
+    ports:
+      - '8088:80'
+    networks:
+      - backend
+  app_db:
+    image: 'mcr.microsoft.com/azure-sql-edge'
+    container_name: 'app-db'
+    environment:
+      SA_PASSWORD: 'Password.1'
+      ACCEPT_EULA: 'Y'
+    ports:
+      - '1433:1433'
+    restart: always
+    networks:
+      - backend

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRN231_Group5_Assignment2_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02aa633d69c55c2a8538e2c42798fd2aaace4453")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRN231_Group5_Assignment2_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRN231_Group5_Assignment2_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

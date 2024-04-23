@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  prn231_group5_assignment2_api:
+    build:
+      context: "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2"
+      dockerfile: "PRN231_Group5_Assignment2_API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net6.0/PRN231_Group5_Assignment2_API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "prn231_group5_assignment2_api:dev"
+    ports: []
+    volumes:
+    - "/Users/thinhtran/.nuget/packages:/root/.nuget/packages"
+    - "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2/PRN231_Group5_Assignment2_API:/app:rw"
+    - "/Users/thinhtran/Documents/ChuyenNganh8/PRN231/PRN231_Group5_Assignment2:/src:rw"
+    working_dir: "/app"
